@@ -69,6 +69,15 @@ song2_status = song2.isPlaying();
 	}
 
 }
+if(scoreRightWrist > 0.1)
+	{
+		circle(rightWristX,rightWristY,20);
+		song.stop();
+		if(song1_status == false){
+			song1.play();
+			document.getElementById("volume").innerHTML= "music.mp3";
+		}
+	}
 
 function play()
 {
